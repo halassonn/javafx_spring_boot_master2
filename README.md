@@ -3,7 +3,7 @@ The application frontend created using JavaFX and backend services are implement
 
 # Getting Started:
 
-1. Clone the project in your workspace using command - git clone https://github.com/RamAlapure/JavaFXSpringBootApp.git
+1. Clone the project in your workspace using command - git clone https://github.com/halassonn/javafx_spring_boot_master2.git
 2. Then import as maven project into eclipse.
 3. Check Java 8 configuration if there is any error.
 4. Update project as maven if dependencies are not resolved.
