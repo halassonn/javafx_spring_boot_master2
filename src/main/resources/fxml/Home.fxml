@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXToolbar?>
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.layout.*?>
+<StackPane fx:id="Home_root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="450.0" styleClass="root" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.ideb.idebgtm.controller.HomeController">
+   <children>
+      <HBox fx:id="main_layout">
+         <children>
+            <AnchorPane fx:id="side_over_flow" minWidth="-Infinity"  styleClass="side-overflow">
+               <children>
+                  <VBox fx:id="side_menu" minWidth="-Infinity" prefWidth="50.0" spacing="5.0" styleClass="side" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" minHeight="-Infinity" onMouseClicked="#open_menu_side" prefHeight="50.0" styleClass="menu_pane">
+                           <children>
+                              <StackPane minWidth="50.0">
+                                 <children>
+                                    <FontAwesomeIcon glyphName="LIST" size="1.5em" styleClass="side_menu_icon" />
+                                 </children>
+                              </StackPane>
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </HBox>
+                        <HBox fx:id="menu_Home" alignment="CENTER_LEFT" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="50.0" styleClass="menu_pane">
+                           <children>
+                              <StackPane minWidth="50.0">
+                                 <children>
+                                    <FontAwesomeIcon glyphName="HOME" size="1.5em" styleClass="side_menu_icon" />
+                                 </children>
+                              </StackPane>
+                              <Label fx:id="menu_title" styleClass="side_menu_title" text="Dashboard" textOverrun="CLIP" HBox.hgrow="SOMETIMES" />
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </HBox>
+                        <HBox fx:id="menu_pegawai" alignment="CENTER_LEFT" layoutX="10.0" layoutY="65.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="50.0" styleClass="menu_pane">
+                           <children>
+                              <StackPane fx:id="icon_pane2" minWidth="50.0">
+                                 <children>
+                                    <FontAwesomeIcon glyphName="USERS" size="1.5em" styleClass="side_menu_icon" />
+                                 </children>
+                              </StackPane>
+                              <Label fx:id="menu_title2" styleClass="side_menu_title" text="Pegawai" textOverrun="CLIP" HBox.hgrow="SOMETIMES" />
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </HBox>
+                        <HBox fx:id="menu_penggajian" alignment="CENTER_LEFT" layoutX="10.0" layoutY="65.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="50.0" styleClass="menu_pane">
+                           <children>
+                              <StackPane fx:id="icon_pane1" minWidth="50.0">
+                                 <children>
+                                    <FontAwesomeIcon glyphName="MONEY" size="1.5em" styleClass="side_menu_icon" />
+                                 </children>
+                              </StackPane>
+                              <Label fx:id="menu_title1" styleClass="side_menu_title" text="Penggajian" textOverrun="CLIP" HBox.hgrow="SOMETIMES" />
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </HBox>
+                        <HBox fx:id="menu_laporan" alignment="CENTER_LEFT" layoutX="10.0" layoutY="146.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="50.0" styleClass="menu_pane">
+                           <children>
+                              <StackPane fx:id="icon_pane11" minWidth="50.0">
+                                 <children>
+                                    <FontAwesomeIcon glyphName="FILE" size="1.5em" styleClass="side_menu_icon" />
+                                 </children>
+                              </StackPane>
+                              <Label fx:id="menu_title11" styleClass="side_menu_title" text="Laporan" textOverrun="CLIP" HBox.hgrow="SOMETIMES" />
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </HBox>
+                        <HBox fx:id="menu_setting" alignment="CENTER_LEFT" layoutX="10.0" layoutY="186.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="50.0" styleClass="menu_pane">
+                           <children>
+                              <StackPane fx:id="icon_pane111" minWidth="50.0">
+                                 <children>
+                                    <FontAwesomeIcon glyphName="COG" size="1.5em" styleClass="side_menu_icon" />
+                                 </children>
+                              </StackPane>
+                              <Label fx:id="menu_title111" styleClass="side_menu_title" text="Setting" textOverrun="CLIP" HBox.hgrow="SOMETIMES" />
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </HBox>
+                        <HBox fx:id="menu_logout" alignment="CENTER_LEFT" layoutX="10.0" layoutY="227.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="50.0" styleClass="menu_pane">
+                           <children>
+                              <StackPane fx:id="icon_pane1111" minWidth="50.0">
+                                 <children>
+                                    <FontAwesomeIcon glyphName="POWER_OFF" size="1.5em" styleClass="side_menu_icon" />
+                                 </children>
+                              </StackPane>
+                              <Label fx:id="menu_title1111" styleClass="side_menu_title" text="Logout" textOverrun="CLIP" HBox.hgrow="SOMETIMES" />
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="main_content" styleClass="main" HBox.hgrow="ALWAYS">
+               <children>
+                  <StackPane fx:id="content" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="32.0" />
+                  <JFXToolbar maxHeight="-Infinity" minHeight="-Infinity" prefHeight="32.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <left>
+                        <Label fx:id="page_title" text="Label" BorderPane.alignment="CENTER" />
+                     </left>
+                     <padding>
+                        <Insets left="15.0" right="5.0" />
+                     </padding>
+                     <right>
+                        <HBox fx:id="username" alignment="CENTER" spacing="5.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <FontAwesomeIcon glyphName="USER" />
+                              <Label fx:id="user" text="Label" />
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </HBox>
+                     </right>
+                  </JFXToolbar>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="2.0" left="2.0" right="2.0" top="32.0" />
+   </padding>
+</StackPane>

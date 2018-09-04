@@ -1,0 +1,83 @@
+/* text-field */
+
+.jfx-text-field {
+    -fx-text-fill: text-color;
+    -jfx-focus-color: root-background;
+    -jfx-unfocus-color: text-color;
+    -fx-padding: 0.333333em 0 0.333333em 0;
+}
+
+.jfx-text-field > .input-line {
+    -fx-background-color: -jfx-unfocus-color;
+    -fx-pref-height: 1px;
+    -fx-translate-y: 1px;
+}
+
+.jfx-text-field > .input-focused-line {
+    -fx-background-color: -jfx-focus-color;
+    -fx-pref-height: 2px;
+}
+
+.jfx-text-field,
+.jfx-text-field:focused {
+    -fx-background-color: TRANSPARENT, TRANSPARENT, TRANSPARENT;
+    -fx-prompt-text-fill: text-color;
+
+}
+
+.jfx-text-field:error {
+    -jfx-focus-color: #D34336;
+    -jfx-unfocus-color: #D34336;
+}
+
+.jfx-text-field .error-label {
+    -fx-text-fill: #D34336;
+}
+
+.jfx-text-field .error-icon {
+    -fx-fill: #D34336;
+}
+
+/*PASSWORD FIELD*/
+
+.jfx-password-field {
+    -fx-text-fill: text-color;
+    -jfx-focus-color: root-background ;
+    -jfx-unfocus-color: text-color;
+    -fx-padding: 0.333333em 0 0.333333em 0;
+}
+
+.jfx-password-field > .input-line {
+    -fx-background-color: -jfx-unfocus-color;
+    -fx-pref-height: 1px;
+    -fx-translate-y: 1px;
+}
+
+.jfx-password-field > .input-focused-line{
+    -fx-background-color: -jfx-focus-color;
+    -fx-pref-height: 2px;
+}
+
+.jfx-password-field > .input-focused-line{
+    -fx-pref-height: 2px;
+    -fx-background-color: -jfx-focus-color;
+}
+
+.jfx-password-field,
+.jfx-password-field:focused {
+    -fx-prompt-text-fill: text-color;
+    -fx-background-color: TRANSPARENT, TRANSPARENT, TRANSPARENT;
+}
+
+.jfx-password-field:error {
+    -jfx-focus-color: #D34336;
+    -jfx-unfocus-color: #D34336;
+}
+
+.jfx-password-field .error-label {
+    -fx-text-fill: #D34336;
+}
+
+.jfx-password-field .error-icon {
+    -fx-fill: #D34336;
+}

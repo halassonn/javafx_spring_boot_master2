@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<StackPane fx:id="root_pegawai" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.ideb.idebgtm.controller.PegawaiController">
+   <children>
+      <ScrollPane fx:id="detail_karyawan" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="493.0" prefWidth="376.0" visible="false">
+         <content>
+            <VBox alignment="TOP_CENTER" prefHeight="460.0" prefWidth="374.0">
+               <children>
+                  <GridPane fx:id="grid_pegawai" alignment="TOP_CENTER" prefHeight="482.0" prefWidth="370.0" styleClass="form" vgap="5.0">
+                     <columnConstraints>
+                        <ColumnConstraints />
+                        <ColumnConstraints />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints fillHeight="false" minHeight="-Infinity" prefHeight="30.0" valignment="TOP" />
+                        <RowConstraints fillHeight="false" minHeight="-Infinity" valignment="TOP" />
+                        <RowConstraints valignment="CENTER" />
+                        <RowConstraints fillHeight="false" minHeight="-Infinity" valignment="BOTTOM" />
+                     </rowConstraints>
+                     <children>
+                        <VBox fx:id="row1" prefHeight="391.0" prefWidth="344.0" spacing="10.0" GridPane.columnSpan="2" GridPane.rowIndex="1">
+                           <children>
+                              <HBox prefWidth="326.0" spacing="20.0">
+                                 <children>
+                                    <ImageView fx:id="photo_view" fitHeight="109.0" fitWidth="104.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/user.png" />
+                                       </image>
+                                    </ImageView>
+                                    <VBox spacing="10.0" HBox.hgrow="SOMETIMES">
+                                       <children>
+                                          <HBox alignment="CENTER_LEFT" spacing="5.0">
+                                             <children>
+                                                <Label layoutX="10.0" layoutY="10.0" minWidth="50.0" text="Nik" />
+                                                <Label text=":" />
+                                                <Label fx:id="lbl_nik" layoutX="10.0" layoutY="10.0" text="12345678" HBox.hgrow="SOMETIMES" />
+                                             </children>
+                                          </HBox>
+                                          <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" spacing="5.0">
+                                             <children>
+                                                <Label layoutX="10.0" layoutY="10.0" minWidth="50.0" text="Nama" />
+                                                <Label text=":" />
+                                                <Label fx:id="lbl_nama" layoutX="10.0" layoutY="10.0" text="Halasson" HBox.hgrow="SOMETIMES" />
+                                             </children>
+                                          </HBox>
+                                          <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="64.0" spacing="5.0">
+                                             <children>
+                                                <Label layoutX="10.0" layoutY="10.0" minWidth="50.0" text="Jenkel" />
+                                                <Label text=":" />
+                                                <Label fx:id="lbl_jenkel" layoutX="10.0" layoutY="10.0" text="Laki-Laki" HBox.hgrow="SOMETIMES" />
+                                             </children>
+                                          </HBox>
+                                          <HBox layoutX="10.0" layoutY="37.0" spacing="5.0">
+                                             <children>
+                                                <Label alignment="TOP_LEFT" layoutX="10.0" layoutY="10.0" minWidth="50.0" text="Alamat" />
+                                                <Label text=":" />
+                                                <Label fx:id="lbl_alamat" alignment="TOP_LEFT" contentDisplay="TOP" layoutX="10.0" layoutY="10.0" prefHeight="81.0" prefWidth="142.0" text="Jalan Dame II No 100, Kel. Huta Rakyat, Kec. Sidikalang" wrapText="true" HBox.hgrow="SOMETIMES" />
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" spacing="5.0">
+                                 <children>
+                                    <Label layoutX="10.0" layoutY="10.0" minWidth="125.0" text="Tempat / Tgl Lahir" />
+                                    <Label text=":" />
+                                    <Label fx:id="lbl_tmpat_tgl_lahir" layoutX="10.0" layoutY="10.0" text="Sidikalang / 24-11-1986" HBox.hgrow="SOMETIMES" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="134.0" spacing="5.0">
+                                 <children>
+                                    <Label layoutX="10.0" layoutY="10.0" minWidth="125.0" text="Status Perkawinan" />
+                                    <Label text=":" />
+                                    <Label fx:id="lbl_sts_perkawinan" layoutX="10.0" layoutY="10.0" text="Menikah / Anak 1" HBox.hgrow="SOMETIMES" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="161.0" spacing="5.0">
+                                 <children>
+                                    <Label layoutX="10.0" layoutY="10.0" minWidth="125.0" text="Jabatan" />
+                                    <Label text=":" />
+                                    <Label fx:id="lbl_jabatan" layoutX="10.0" layoutY="10.0" text="KASUBAG PEMBUKUAN" HBox.hgrow="SOMETIMES" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="188.0" spacing="5.0">
+                                 <children>
+                                    <Label layoutX="10.0" layoutY="10.0" minWidth="125.0" text="Jenis Karyawan" />
+                                    <Label text=":" />
+                                    <Label fx:id="lbl_jenis_karyawan" layoutX="10.0" layoutY="10.0" text="Karyawan Tetap" HBox.hgrow="SOMETIMES" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="216.0" spacing="5.0">
+                                 <children>
+                                    <Label layoutX="10.0" layoutY="10.0" minWidth="125.0" text="Status Karyawan" />
+                                    <Label text=":" />
+                                    <Label fx:id="lbl_status_karyawan" layoutX="10.0" layoutY="10.0" text="Aktif" HBox.hgrow="SOMETIMES" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="243.0" spacing="5.0">
+                                 <children>
+                                    <Label layoutX="10.0" layoutY="10.0" minWidth="125.0" text="Tanggal Masuk" />
+                                    <Label text=":" />
+                                    <Label fx:id="lbl_tgl_masuk" layoutX="10.0" layoutY="10.0" text="14-02-2014" HBox.hgrow="SOMETIMES" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="270.0" spacing="5.0">
+                                 <children>
+                                    <Label layoutX="10.0" layoutY="10.0" minWidth="125.0" text="Masa Kerja" />
+                                    <Label text=":" />
+                                    <Label fx:id="lbl_masa_kerja" layoutX="10.0" layoutY="10.0" text="4 thn 5 bln 7hari" HBox.hgrow="SOMETIMES" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="297.0" spacing="5.0">
+                                 <children>
+                                    <Label layoutX="10.0" layoutY="10.0" minWidth="125.0" text="Pend/Gol" />
+                                    <Label text=":" />
+                                    <Label fx:id="lbl_pend_gol" layoutX="10.0" layoutY="10.0" text="S1 / III-c" HBox.hgrow="SOMETIMES" />
+                                 </children>
+                              </HBox>
+                           </children>
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin>
+                           <padding>
+                              <Insets top="10.0" />
+                           </padding>
+                        </VBox>
+                        <HBox alignment="BOTTOM_RIGHT" prefHeight="40.0" prefWidth="317.0" GridPane.columnSpan="2" GridPane.rowIndex="2">
+                           <children>
+                              <JFXButton onAction="#close_detail_pegawai" text="OK" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="30.0" GridPane.columnSpan="2">
+                           <children>
+                              <Label text="Data Karyawan">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="5.0" />
+                     </padding>
+                  </GridPane>
+               </children>
+               <padding>
+                  <Insets bottom="2.0" left="2.0" right="2.0" />
+               </padding>
+            </VBox>
+         </content>
+      </ScrollPane>
+      <AnchorPane styleClass="page">
+         <children>
+            <JFXToolbar maxHeight="-Infinity" minHeight="-Infinity" prefHeight="60.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <bottom>
+                  <TextField fx:id="txt_cari_pegawai" promptText="Cari Data Karyawan" BorderPane.alignment="CENTER" />
+               </bottom>
+               <left>
+                  <HBox alignment="CENTER" spacing="5.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <JFXButton fx:id="btn_refresh_pegawai" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" onAction="#refresh_list_karyawan" prefHeight="30.0" prefWidth="26.0">
+                           <graphic>
+                              <FontAwesomeIcon glyphName="REFRESH" size="1.5em" styleClass="icon" />
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton fx:id="btn_print" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" disable="true" layoutX="42.0" layoutY="12.0" prefHeight="30.0" prefWidth="26.0">
+                           <graphic>
+                              <FontAwesomeIcon glyphName="PRINT" size="1.5em" styleClass="icon" />
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton fx:id="btn_open_form" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" onAction="#open_form" prefHeight="30.0" prefWidth="26.0">
+                           <graphic>
+                              <FontAwesomeIcon glyphName="PLUS" size="1.5em" styleClass="icon" />
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                  </HBox>
+               </left>
+            </JFXToolbar>
+            <JFXTreeTableView fx:id="tbl_Karyawan" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="60.0" />
+            <AnchorPane fx:id="form_pegawai" layoutX="25.600000381469727" translateZ="1.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <ScrollPane fitToHeight="true" fitToWidth="true" minWidth="-Infinity" pannable="true" prefWidth="405.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <content>
+                        <VBox styleClass="form">
+                           <children>
+                              <HBox alignment="CENTER_RIGHT" fillHeight="false" styleClass="header-form">
+                                 <children>
+                                    <AnchorPane HBox.hgrow="ALWAYS">
+                                       <children>
+                                          <JFXButton alignment="CENTER" contentDisplay="GRAPHIC_ONLY" maxHeight="-Infinity" minHeight="-Infinity" onAction="#close_form" prefHeight="25.2" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <graphic>
+                                                <FontAwesomeIcon glyphName="CLOSE" styleClass="icon" />
+                                             </graphic>
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </JFXButton>
+                                          <Label text="Add Data Pegawai" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </HBox>
+                              <GridPane prefHeight="625.0" prefWidth="397.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints fillWidth="false" />
+                                    <ColumnConstraints hgrow="SOMETIMES" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints />
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="-Infinity" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <StackPane maxWidth="-Infinity" minWidth="-Infinity">
+                                       <children>
+                                          <ImageView fx:id="image_view" fitHeight="150.0" fitWidth="114.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../images/user.png" />
+                                             </image>
+                                          </ImageView>
+                                          <JFXButton fx:id="btn_choose_file" onAction="#choose_image" prefHeight="113.0" prefWidth="112.0" text="Choose Image">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </JFXButton>
+                                       </children>
+                                    </StackPane>
+                                    <VBox fillWidth="false" spacing="20.0" GridPane.columnIndex="1">
+                                       <children>
+                                          <JFXTextField fx:id="txt_nik" disable="true" labelFloat="true" prefHeight="25.0" prefWidth="123.0" promptText="Nik" />
+                                          <JFXTextField fx:id="txt_nama" labelFloat="true" layoutX="15.0" layoutY="20.0" minWidth="-Infinity" prefHeight="25.0" prefWidth="250.0" promptText="Nama" />
+                                          <JFXTextField fx:id="txt_alamat" labelFloat="true" layoutX="15.0" layoutY="65.0" minWidth="-Infinity" prefHeight="25.0" prefWidth="250.0" promptText="Alamat" />
+                                       </children>
+                                       <padding>
+                                          <Insets left="5.0" right="5.0" top="10.0" />
+                                       </padding>
+                                       <GridPane.margin>
+                                          <Insets />
+                                       </GridPane.margin>
+                                    </VBox>
+                                    <FlowPane hgap="20.0" minWidth="-Infinity" prefHeight="249.0" prefWidth="383.0" vgap="20.0" GridPane.columnSpan="2" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="1">
+                                       <children>
+                                          <JFXComboBox fx:id="cmb_jenkel" labelFloat="true" prefHeight="25.0" prefWidth="187.0" promptText="Jenis Kelamin" />
+                                          <JFXTextField fx:id="txt_tempat_lahir" labelFloat="true" prefHeight="25.0" prefWidth="160.0" promptText="Tempat Lahir" />
+                                          <JFXDatePicker fx:id="txt_tgl_lahir" prefHeight="28.0" prefWidth="190.0" promptText="Tanggal Lahir" />
+                                          <JFXComboBox fx:id="cmb_agama" labelFloat="true" layoutX="10.0" layoutY="30.0" prefHeight="25.0" prefWidth="145.0" promptText="Agama" />
+                                          <JFXComboBox fx:id="cmb_Status_pernikahan" labelFloat="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="28.0" prefWidth="184.0" promptText="Status Pernikahan" />
+                                          <JFXTextField fx:id="txt_email" labelFloat="true" layoutX="217.0" layoutY="30.0" prefHeight="25.0" prefWidth="160.0" promptText="Email" />
+                                          <JFXComboBox fx:id="cmb_pendidikan" labelFloat="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="28.0" prefWidth="185.0" promptText="Pendidikan" />
+                                          <JFXTextField fx:id="txt_notelp" labelFloat="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="28.0" prefWidth="160.0" promptText="No Hp / Telepon" />
+                                          <HBox alignment="CENTER_LEFT" spacing="10.0">
+                                             <children>
+                                                <Label prefHeight="40.0" prefWidth="41.0" text="Usia : ">
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="usia">
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label layoutX="66.0" layoutY="22.0" text="Tahun">
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                             <padding>
+                                                <Insets left="5.0" />
+                                             </padding>
+                                          </HBox>
+                                          <Separator prefHeight="0.0" prefWidth="378.0" />
+                                          <JFXComboBox fx:id="cmb_jenis_karyawan" labelFloat="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="28.0" prefWidth="185.0" promptText="Jenis Karyawan" />
+                                          <JFXComboBox fx:id="cmb_status_karyawan" labelFloat="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="28.0" prefWidth="160.0" promptText="Status Karyawan" />
+                                          <JFXComboBox fx:id="cmb_jabatan" labelFloat="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="28.0" prefWidth="187.0" promptText="Jabatan" />
+                                          <JFXComboBox fx:id="cmb_golongan" labelFloat="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="28.0" prefWidth="160.0" promptText="Golongan" />
+                                          <JFXDatePicker fx:id="txt_tgl_masuk" defaultColor="#00698e" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="28.0" prefWidth="188.0" promptText="Tanggal Masuk" />
+                                          <HBox alignment="CENTER_LEFT" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="169.0" spacing="10.0">
+                                             <children>
+                                                <Label prefHeight="34.0" prefWidth="84.0" text="Masa Kerja :">
+                                                   <font>
+                                                      <Font name="System Bold Italic" size="9.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="lbl_masa_kerja1" prefHeight="35.0" prefWidth="130.0">
+                                                   <font>
+                                                      <Font name="System Bold Italic" size="9.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                       <GridPane.margin>
+                                          <Insets />
+                                       </GridPane.margin>
+                                       <padding>
+                                          <Insets top="20.0" />
+                                       </padding>
+                                    </FlowPane>
+                                    <HBox alignment="CENTER_RIGHT" focusTraversable="true" prefHeight="25.0" prefWidth="373.0" spacing="5.0" GridPane.columnSpan="2" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="3">
+                                       <children>
+                                          <JFXButton fx:id="btn_simpan" text="Simpan">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </JFXButton>
+                                          <JFXButton layoutX="342.0" layoutY="10.0" text="Batal">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </JFXButton>
+                                       </children>
+                                       <padding>
+                                          <Insets right="20.0" />
+                                       </padding>
+                                    </HBox>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="20.0" left="10.0" />
+                                 </padding>
+                              </GridPane>
+                           </children>
+                        </VBox>
+                     </content>
+                  </ScrollPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

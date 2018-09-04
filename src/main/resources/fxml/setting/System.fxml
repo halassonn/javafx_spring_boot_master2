@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXToolbar?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.layout.*?>
+<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="page" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.ideb.idebgtm.controller.setting.SystemSettingController">
+   <children>
+      <JFXToolbar AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <HBox BorderPane.alignment="CENTER">
+               <children>
+                  <JFXButton onAction="#back_to_main_setting" text="Back">
+                     <graphic>
+                        <FontAwesomeIcon glyphName="ARROW_LEFT" />
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+               </children>
+            </HBox>
+         </left>
+         <center>
+            <Label fx:id="title_page" text="Label" BorderPane.alignment="CENTER" />
+         </center>
+      </JFXToolbar>
+      <VBox prefHeight="200.0" prefWidth="100.0" spacing="10.0" styleClass="page" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="30.0">
+         <children>
+            <JFXComboBox fx:id="cmb_thema" labelFloat="true" promptText="Select Thema" />
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>

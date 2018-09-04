@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<BorderPane fx:id="view" styleClass="main" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.ideb.idebgtm.controller.report.Report_ViewerController">
+    <top>
+        <Pane BorderPane.alignment="CENTER">
+            <children>
+                <Button layoutX="14.0" layoutY="16.0" mnemonicParsing="false" onAction="#print" text="Print" />
+                <ComboBox fx:id="pageList" layoutX="166.0" layoutY="16.0" onAction="#pageListSelected" />
+                <Button layoutX="55.0" layoutY="16.0" mnemonicParsing="false" onAction="#save" text="Save" />
+                <Slider fx:id="zoomLevel" blockIncrement="25.0" layoutX="223.0" layoutY="20.0" majorTickUnit="75.0" max="175.0" min="25.0" minorTickCount="2" showTickLabels="true" showTickMarks="true" value="100.0" />
+                <Label layoutX="105.0" layoutY="18.0" text="View Page" />
+                <Label layoutX="280.0" layoutY="4.0" text="Zoom" />
+            <Button layoutX="376.0" layoutY="16.0" mnemonicParsing="false" onAction="#close_viewer" text="Close" />
+
+            </children></Pane>
+    </top>
+    <center>
+        <ScrollPane fitToHeight="true" fitToWidth="true" prefHeight="500.0" prefWidth="500.0" BorderPane.alignment="CENTER">
+            <content>
+            <VBox alignment="CENTER">
+               <children>
+                      <ImageView fx:id="imageView" fitHeight="43.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </VBox>
+            </content>
+        </ScrollPane>
+    </center>
+    <right>
+    </right>
+    <bottom>
+        <Accordion fx:id="resultAccordion" BorderPane.alignment="CENTER">
+            <panes>
+                <TitledPane fx:id="resultPane" animated="false" text="untitled 1" visible="false">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <Label fx:id="resultDescription" layoutX="14.0" layoutY="7.0" text="Label" wrapText="true" />
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </TitledPane>
+            </panes>
+        </Accordion>
+    </bottom>
+</BorderPane>

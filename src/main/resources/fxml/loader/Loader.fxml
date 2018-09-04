@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXProgressBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<StackPane fx:id="root_loader" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" visible="false" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.ideb.idebgtm.controller.loader.LoaderController">
+    <children>
+        <VBox fx:id="loader_pane" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="170.0" prefWidth="344.0" spacing="5.0" styleClass="page">
+            <children>
+                <JFXProgressBar fx:id="progress" prefHeight="4.0" prefWidth="283.0" />
+                <Label fx:id="lbl_task" text="Label" />
+            </children>
+        </VBox>
+    </children>
+</StackPane>

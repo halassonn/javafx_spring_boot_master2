@@ -1,0 +1,46 @@
+@import "styles.css";
+@import "control.css";
+@import "scrollbar.css";
+*{
+    dark0:#c56200;
+    dark1: #ff9100;
+    dark2: #ffc246;
+    dark3: #c77c02;
+    dark4: #ffab40;
+    dark5: #ffdd71;
+
+    text-primary:#000000;
+    text-secondary:#ffffff;
+
+
+    root-background: dark1;
+    page-background: rgba(255, 255, 255, 0.35);
+    main-background: dark3;
+    side-overflow: rgba(0, 0, 0, 0.61);
+    side-background: dark1;
+    side-menu-hover: dark2;
+    cs-button:
+            linear-gradient(rgba(255, 254, 47, 0.98), rgb(169, 255, 0)),
+            radial-gradient(center 50% -40%, radius 200%, rgb(198, 255, 57) 45%, rgb(165, 255, 0) 50%);
+    cs-button-text: text-scondary;
+    text-color: whitesmoke;
+}
+
+.custom_button:hover{
+    -fx-cursor: hand;
+    -fx-background-color:
+            linear-gradient(#f0ff35, #a9ff00),
+            radial-gradient(center 50% -40%, radius 200%, #b8ee36 45%, #80c800 50%);
+    -fx-background-radius: 50%;
+    -fx-border-radius: 50%;
+    -fx-border-color: transparent;
+    -fx-border-width: 0px;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+    -fx-text-fill: #000000;
+}
+#side_menu:hover > .side_menu_icon{
+    -fx-fill: whitesomke;
+}
+#side_menu:hover > .side_menu_title{
+    -fx-text-fill: whitesomke;
+}

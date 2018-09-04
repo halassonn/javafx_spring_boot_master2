@@ -1,0 +1,47 @@
+@import "styles.css";
+@import "control.css";
+@import "scrollbar.css";
+*{
+    dark0:rgb(0,0,0);
+    dark1: rgba(4, 4, 4, 0.68);
+    dark2: rgba(4, 4, 4, 0.55);
+    dark3: rgba(0, 0, 0, 0.43);
+    dark4: rgba(0, 0, 0, 0.38);
+    dark5: rgba(0, 0, 0, 0.31);
+
+    text-primary:whitesmoke;
+
+
+    root-background: rgb(0, 0, 0);
+    page-background: rgba(255, 255, 255, 0.35);
+    main-background: rgba(59, 59, 59, 0.89);
+    side-overflow: rgba(0, 0, 0, 0.61);
+    side-background: rgb(0, 0, 0);
+    side-menu-hover: rgba(88, 224, 247, 0.79);
+    cs-button:
+            linear-gradient(rgba(255, 254, 47, 0.98), rgb(169, 255, 0)),
+            radial-gradient(center 50% -40%, radius 200%, rgb(198, 255, 57) 45%, rgb(165, 255, 0) 50%);
+    cs-button-text: #ffffff;
+    text-color: whitesmoke;
+}
+
+.custom_button:hover{
+    -fx-cursor: hand;
+    -fx-background-color:
+            linear-gradient(#f0ff35, #a9ff00),
+            radial-gradient(center 50% -40%, radius 200%, #b8ee36 45%, #80c800 50%);
+
+    -fx-background-radius: 50%;
+    -fx-border-radius: 50%;
+    -fx-border-color: transparent;
+    -fx-border-width: 0px;
+   /* -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );*/
+    -fx-effect: dropshadow(three-pass-box, derive(cadetblue, -20%), 10, 0, 4, 4);
+    -fx-text-fill: #000000;
+}
+#side_menu:hover > .side_menu_icon{
+    -fx-fill: whitesomke;
+}
+#side_menu:hover > .side_menu_title{
+    -fx-text-fill: whitesomke;
+}
